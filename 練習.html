@@ -24,11 +24,11 @@
 
     img {
       /* 這裡的寬度是以 .col裡的寬度為變化 */
-      max-width: 50%;
+      max-width: 30%;
     }
 
     .col {
-      width: 80%;
+      width: 85%;
       padding: 25px;
       margin: auto;
       /* 設定彈性盒 */
@@ -48,7 +48,7 @@
 
     @media (min-width: 1000px) {
       .container {
-        width: 90%;
+        width: 100%;
       }
 
       .col {
@@ -85,27 +85,71 @@
         right: 45%;
       }
 
+      .position1::before {
+        content: '————';
+        position: absolute;
+        top: 70%;
+        left: 60%;
+        transform: rotate(35deg);
+        color: rgb(212, 211, 211);
+      }
+
       .position2 {
         position: absolute;
         top: 5%;
         right: 60%;
       }
 
+      .position2::before {
+        content: '——————————————';
+        position: absolute;
+        top: 75%;
+        left: 60%;
+        transform: rotate(15deg);
+        color: rgb(212, 211, 211);
+      }
+
       .position3 {
         position: absolute;
-        top: 35%;
+        top: 30%;
         right: 55%;
+      }
+
+      .position3::before {
+        content: '——————————';
+        position: absolute;
+        top: 45%;
+        left: 60%;
+        transform: rotate(-5deg);
+        color: rgb(212, 211, 211);
       }
 
       .position4 {
         position: absolute;
         bottom: 10%;
-        right: 45%;
+        right: 50%;
+      }
+
+      .position4::before {
+        content: '————————';
+        position: absolute;
+        left: 60%;
+        transform: rotate(-25deg);
+        color: rgb(212, 211, 211);
       }
 
       .position5 {
         position: absolute;
         left: 45%;
+      }
+
+      .position5::before {
+        content: '————';
+        position: absolute;
+        top: 80%;
+        left: 25%;
+        transform: rotate(-35deg);
+        color: rgb(212, 211, 211);
       }
 
       .position6 {
@@ -114,11 +158,30 @@
         left: 55%;
       }
 
+      .position6::before {
+        content: '—————————';
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: rotate(0deg);
+        color: rgb(212, 211, 211);
+      }
+
       .position7 {
         position: absolute;
         bottom: 15%;
         left: 50%;
       }
+
+      .position7::before {
+        content: '————————';
+        position: absolute;
+        bottom: 85%;
+        left: 15%;
+        transform: rotate(30deg);
+        color: rgb(212, 211, 211);
+      }
+
     }
   </style>
 </head>
