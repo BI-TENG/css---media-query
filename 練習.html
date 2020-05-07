@@ -47,12 +47,8 @@
 
 
     @media (min-width: 1000px) {
-      .container {
-        width: 100%;
-      }
-
       .col {
-        width: 45%;
+        width: 50%;
         display: flex;
         flex-direction: column;
       }
@@ -67,70 +63,67 @@
 
       .container div:first-of-type {
         width: 80%;
-      }
-
-      .container .col:not(#main) p {
-        display: none;
-      }
-
-      .position0 {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
 
-      .position1 {
+      .container .col:not(#main) p {
+        display: none;
+      }
+
+      .container .col:nth-child(2) {
         position: absolute;
         right: 45%;
       }
 
-      .position1::before {
-        content: '————';
+      .container .col:nth-child(2)::before {
+        content: '———————';
         position: absolute;
-        top: 70%;
+        top: 80%;
         left: 60%;
         transform: rotate(35deg);
         color: rgb(212, 211, 211);
       }
 
-      .position2 {
+      .container .col:nth-child(3) {
         position: absolute;
-        top: 5%;
-        right: 60%;
+        top: 10%;
+        right: 65%;
       }
 
-      .position2::before {
-        content: '——————————————';
+      .container .col:nth-child(3)::before {
+        content: '——————————————————';
         position: absolute;
         top: 75%;
-        left: 60%;
-        transform: rotate(15deg);
+        left: 65%;
+        transform: rotate(14deg);
         color: rgb(212, 211, 211);
       }
 
-      .position3 {
+      .container .col:nth-child(4) {
         position: absolute;
-        top: 30%;
-        right: 55%;
+        top: 40%;
+        right: 60%;
       }
 
-      .position3::before {
-        content: '——————————';
+      .container .col:nth-child(4)::before {
+        content: '—————————————';
         position: absolute;
-        top: 45%;
-        left: 60%;
+        top: 35%;
+        left: 65%;
         transform: rotate(-5deg);
         color: rgb(212, 211, 211);
       }
 
-      .position4 {
+      .container .col:nth-child(5) {
         position: absolute;
-        bottom: 10%;
-        right: 50%;
+        top: 60%;
+        right: 49%;
       }
 
-      .position4::before {
+      .container .col:nth-child(5)::before {
         content: '————————';
         position: absolute;
         left: 60%;
@@ -138,57 +131,56 @@
         color: rgb(212, 211, 211);
       }
 
-      .position5 {
+
+      .container .col:nth-child(6) {
         position: absolute;
         left: 45%;
       }
 
-      .position5::before {
-        content: '————';
+      .container .col:nth-child(6)::before {
+        content: '————————';
         position: absolute;
-        top: 80%;
-        left: 25%;
-        transform: rotate(-35deg);
+        top: 100%;
+        left: 26%;
+        transform: rotate(-34deg);
         color: rgb(212, 211, 211);
       }
 
-      .position6 {
+      .container .col:nth-child(7) {
         position: absolute;
         top: 30%;
-        left: 55%;
+        left: 60%;
       }
 
-      .position6::before {
-        content: '—————————';
+      .container .col:nth-child(7)::before {
+        content: '—————————————';
         position: absolute;
         top: 50%;
-        left: 10%;
         transform: rotate(0deg);
         color: rgb(212, 211, 211);
       }
 
-      .position7 {
+      .container .col:nth-child(8) {
         position: absolute;
         bottom: 15%;
         left: 50%;
       }
 
-      .position7::before {
+      .container .col:nth-child(8)::before {
         content: '————————';
         position: absolute;
-        bottom: 85%;
-        left: 15%;
-        transform: rotate(30deg);
+        bottom: 90%;
+        left: 18%;
+        transform: rotate(20deg);
         color: rgb(212, 211, 211);
       }
-
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <div class="col position0" id="main">
+    <div class="co1" id=" main">
       <img src="./wda.png">
       <h1>泰山職訓局</h1>
       <h2>從零開始的網頁設計課程</h2>
@@ -198,7 +190,7 @@
       </p>
     </div>
 
-    <div class="col position1">
+    <div class="col">
       <img src="./css.png">
       <h3>CSS3</h3>
       <p>
@@ -207,7 +199,7 @@
       </p>
     </div>
 
-    <div class="col position2">
+    <div class="col">
       <img src="./html.png">
       <h3>Html</h3>
       <p>
@@ -216,7 +208,7 @@
       </p>
     </div>
 
-    <div class="col position3">
+    <div class="col">
       <img src="./js.png">
       <h3>JavaScript</h3>
       <p>
@@ -224,7 +216,7 @@
       </p>
     </div>
 
-    <div class="col position4">
+    <div class="col">
       <img src="./jq.png">
       <h3>jQuery</h3>
       <p>
@@ -233,7 +225,7 @@
       </p>
     </div>
 
-    <div class="col position5">
+    <div class="col">
       <img src="./bs.png">
       <h3>Bootstrap</h3>
       <p>
@@ -241,7 +233,7 @@
       </p>
     </div>
 
-    <div class="col position6">
+    <div class="col">
       <img src="./sass.png">
       <h3>Sass</h3>
       <p>
@@ -251,7 +243,7 @@
       </p>
     </div>
 
-    <div class="col position7">
+    <div class="col">
       <img src="./vue.png">
       <h3>Vue.js</h3>
       <p>
