@@ -15,7 +15,6 @@
     }
 
     .container {
-      width: 100%;
       padding: 0 15px;
       margin: auto;
       display: flex;
@@ -24,7 +23,7 @@
 
     img {
       /* 這裡的寬度是以 .col裡的寬度為變化 */
-      max-width: 30%;
+      max-width: 100%;
     }
 
     .col {
@@ -48,7 +47,7 @@
 
     @media (min-width: 1000px) {
       .col {
-        width: 50%;
+        width: 15%;
         display: flex;
         flex-direction: column;
       }
@@ -57,12 +56,8 @@
         align-self: center;
       }
 
-      img {
-        width: 20%;
-      }
-
       .container div:first-of-type {
-        width: 80%;
+        width: 20%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -75,14 +70,14 @@
 
       .container .col:nth-child(2) {
         position: absolute;
-        right: 45%;
+        right: 65%;
       }
 
       .container .col:nth-child(2)::before {
         content: '———————';
         position: absolute;
         top: 80%;
-        left: 60%;
+        left: 85%;
         transform: rotate(35deg);
         color: rgb(212, 211, 211);
       }
@@ -90,14 +85,14 @@
       .container .col:nth-child(3) {
         position: absolute;
         top: 10%;
-        right: 65%;
+        right: 80%;
       }
 
       .container .col:nth-child(3)::before {
         content: '——————————————————';
         position: absolute;
         top: 75%;
-        left: 65%;
+        left: 100%;
         transform: rotate(14deg);
         color: rgb(212, 211, 211);
       }
@@ -105,14 +100,14 @@
       .container .col:nth-child(4) {
         position: absolute;
         top: 40%;
-        right: 60%;
+        right: 75%;
       }
 
       .container .col:nth-child(4)::before {
         content: '—————————————';
         position: absolute;
         top: 35%;
-        left: 65%;
+        left: 100%;
         transform: rotate(-5deg);
         color: rgb(212, 211, 211);
       }
@@ -120,13 +115,13 @@
       .container .col:nth-child(5) {
         position: absolute;
         top: 60%;
-        right: 49%;
+        right: 60%;
       }
 
       .container .col:nth-child(5)::before {
-        content: '————————';
+        content: '———';
         position: absolute;
-        left: 60%;
+        left: 85%;
         transform: rotate(-25deg);
         color: rgb(212, 211, 211);
       }
@@ -134,14 +129,14 @@
 
       .container .col:nth-child(6) {
         position: absolute;
-        left: 45%;
+        left: 65%;
       }
 
       .container .col:nth-child(6)::before {
-        content: '————————';
+        content: '———————';
         position: absolute;
-        top: 100%;
-        left: 26%;
+        top: 90%;
+        right: 90%;
         transform: rotate(-34deg);
         color: rgb(212, 211, 211);
       }
@@ -149,13 +144,14 @@
       .container .col:nth-child(7) {
         position: absolute;
         top: 30%;
-        left: 60%;
+        right: 15%;
       }
 
       .container .col:nth-child(7)::before {
-        content: '—————————————';
+        content: '————————';
         position: absolute;
         top: 50%;
+        right: 100%;
         transform: rotate(0deg);
         color: rgb(212, 211, 211);
       }
@@ -163,14 +159,14 @@
       .container .col:nth-child(8) {
         position: absolute;
         bottom: 15%;
-        left: 50%;
+        left: 65%;
       }
 
       .container .col:nth-child(8)::before {
         content: '————————';
         position: absolute;
-        bottom: 90%;
-        left: 18%;
+        bottom: 70%;
+        right: 90%;
         transform: rotate(20deg);
         color: rgb(212, 211, 211);
       }
